@@ -1,0 +1,16 @@
+html, body {
+    height: 90%;  
+  }
+  
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
