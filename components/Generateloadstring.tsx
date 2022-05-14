@@ -18,7 +18,7 @@ export default class generateloadstring extends React.Component<CreateProps, Cre
     constructor(props: CreateProps) {
         super(props);
         this.state = {
-            output: null,
+            output: 'Made with ❤️ by mattlawz.dev',
             text: "📋 Copy To Clipboard",
         };
         this.handleChange = this.handleChange.bind(this);
@@ -37,11 +37,11 @@ export default class generateloadstring extends React.Component<CreateProps, Cre
         }, 2000);
     }
 
-    handleChange(element) {
+    handleChange(element: any) {
         if (element.target.value == "") {
             this.setState({
-                output: null,
-            });
+                output: 'Made with ❤️ by mattlawz.dev',
+           });
         } else {
             this.setState({
                 output:
@@ -50,7 +50,7 @@ export default class generateloadstring extends React.Component<CreateProps, Cre
         }
     }
 
-    render()    {
+    render()   {
         return (
             <>
                         <Input

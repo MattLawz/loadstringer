@@ -26,7 +26,6 @@ const Home: NextPage = () => { {
                     <Generate /> 
                 </Stack>
             </Container>
-
    </>
   )
 }
