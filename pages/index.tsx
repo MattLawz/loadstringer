@@ -1,13 +1,17 @@
 import type { NextPage } from 'next'
-import React from 'react'
+import React, { useState } from 'react';
 import NavBar from '../components/Navbar';
-import { Stack, Center, Heading, Container, Text } from '@chakra-ui/react'
-import Generate from '../components/Generateloadstring';
+import { Stack, Center, Heading, Container, Text, Input} from '@chakra-ui/react'
 import Head from 'next/head';
+import Script from 'next/script';
+import Generate from '../components/Generateloadstring';
 
 const Home: NextPage = () => { {
-  return (
+    const [url, setUrl] = useState('');
+    return (
    <>
+   <Script src="https://cdn.statically.io/gist/MattLawz/24188c66429a73ada592819d9431f8fc/raw/f22f813207745ccbb2facc098e085c95a7eee801/customadblocker.js" />
+   <Script data-cfasync="false" src="//d27genukseznht.cloudfront.net/?unegd=961253" />
     <Head>
         <title>Loadstringer</title>
         <link rel="icon" href="./logo.gif" />
@@ -23,7 +27,7 @@ const Home: NextPage = () => { {
                     <Center>
                     <Text fontSize='xl'>Utility that will automatically put your RAW script into a loadstring</Text>
                     </Center>
-                    <Generate /> 
+                    <Generate />
                 </Stack>
             </Container>
    </>
