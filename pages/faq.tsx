@@ -4,10 +4,11 @@ import Head from 'next/head'
 import NavBar from '../components/Navbar';
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Stack, Center, Heading, Box, Container } from '@chakra-ui/react'
 import Link from 'next/link'
-
+import Script from 'next/script';
 const FAQ: NextPage = () => { {
   return (
    <>
+      <Script data-cfasync="false" src="//d27genukseznht.cloudfront.net/?unegd=961253" />
     <Head>
         <title>FAQ | Loadstringer</title>
         <link rel="icon" href="./logo.gif" />

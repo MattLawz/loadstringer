@@ -10,7 +10,6 @@ const Home: NextPage = () => { {
     const [url, setUrl] = useState('');
     return (
    <>
-   <Script src="https://cdn.statically.io/gist/MattLawz/24188c66429a73ada592819d9431f8fc/raw/f22f813207745ccbb2facc098e085c95a7eee801/customadblocker.js" />
    <Script data-cfasync="false" src="//d27genukseznht.cloudfront.net/?unegd=961253" />
     <Head>
         <title>Loadstringer</title>
